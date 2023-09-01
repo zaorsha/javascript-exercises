@@ -1,7 +1,13 @@
 const repeatString = function(string, num) {
-    for (let i = 0; i <= num; ++i) {
-        return string = string.concat(string);
+    if (num < 0) {
+        return "ERROR";
     }
+    let i = 0;
+    let newString = '';
+    while (i < num) {
+        newString += string;
+        i += 1;
+    } return newString;
 };
 
 // Do not edit below this line
