@@ -1,7 +1,7 @@
 const removeFromArray = function(testArray, ...item) {
     let newArray = [];
     for (let i in testArray) {
-        if (testArray[i] == item) {
+        if (item.includes(testArray[i])) {
             continue;
         } else {
             newArray.push(testArray[i]);
