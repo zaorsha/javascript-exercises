@@ -1,8 +1,12 @@
 const reverseString = function(string) {
-    const charArray = string.split("");
-    const reversedArray = charArray.reverse();
-    let newString = reversedArray.join("");
-    return newString;
+
+    // Take a string as input and reverse it
+    // Use a new string to grab the end letter of the string, then remove that end letter from the original until empty
+
+    let reversed = string.split("").reverse().join("");
+
+    return reversed;
+
 };
 
 // Do not edit below this line
